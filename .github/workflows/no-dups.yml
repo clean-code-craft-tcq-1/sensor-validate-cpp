@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install jscpd
-      run: npm install -g jscpd
+      run: sudo npm install -g jscpd
 
     - name: Limit complexity
       run: jscpd . --min-lines 3 --min-tokens 48 --threshold 0
